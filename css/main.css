@@ -1,0 +1,128 @@
+body {
+    font-family: Helvetica, serif;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+   font-size: 44px;
+}
+
+h4 {
+    font-size: 23px;
+}
+
+.CV {
+    background: #444444;
+    width: 1127px;
+    height: 595px;
+    display: flex;
+    border-radius: 30px;
+}
+
+
+.cv-bar {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cv-card {
+    background: #222222;
+    width: 747px;
+    border-radius: 30px;
+}
+
+.wrapper-profile {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wrapper-avatar {
+    align-self: center;
+}
+
+.avatar {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+}
+
+.shadow {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    margin: 12px;
+    background: #C4C4C4;
+    opacity: 0.2;
+}
+
+.bar-name {
+    margin-top: 29px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.bar-profession {
+    margin: 8px;
+    text-align: center;
+}
+
+
+.social-networks {
+    margin: 3px;
+    display: flex;
+    align-self: center;
+}
+
+.telegram, .vk, .odnoklassniki {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    border-radius: 24px;
+}
+
+.download_cv {
+    margin: 49px;
+    width: 168px;
+    height: 46px;
+    border-radius: 40px;
+    background: #444444;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 3px solid #FFFFFF;
+    align-self: center;
+}
+
+.copyrights {
+    margin-top: 17px;
+    align-self: center;
+}
+
+.cv-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content {
+    align-self: center;
+}
+
+.cv-name {
+    text-align: center;
+    margin: 0;
+}
+
+.cv-profession {
+    text-align: center;
+    margin: 0;
+}
