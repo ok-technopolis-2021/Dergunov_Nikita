@@ -1,25 +1,24 @@
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     font-family: Helvetica, serif;
+    font-size: 17px;
     color: #FFFFFF;
 }
 
-h1 {
-    font-size: 62px;
-}
-
-h2 {
-   font-size: 44px;
-}
-
-h4 {
-    font-size: 23px;
-}
-
 .CV {
+    display: flex;
     background: #444444;
     width: 1127px;
     height: 595px;
-    display: flex;
     border-radius: 30px;
 }
 
@@ -28,7 +27,7 @@ h4 {
     width: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
 }
 
 .cv-card {
@@ -39,9 +38,9 @@ h4 {
 
 .wrapper-profile {
     display: flex;
-    align-self: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+    margin-top: 70px;
 }
 
 .wrapper-avatar {
@@ -50,23 +49,13 @@ h4 {
 
 .avatar {
     position: relative;
-    width: 180px;
     height: 180px;
     border-radius: 180px;
-}
-
-.shadow {
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    border-radius: 180px;
-    margin: 12px;
-    background: #C4C4C4;
-    opacity: 0.2;
+    box-shadow: 12px 12px #5d5d5d;
 }
 
 .bar-name {
-    margin-top: 29px;
+    margin-top: 25px;
     margin-bottom: 0;
     text-align: center;
 }
@@ -78,39 +67,42 @@ h4 {
 
 
 .social-networks {
-    margin: 3px;
     display: flex;
-    align-self: center;
+    align-items: center;
+    margin: 3px 3px 52px;
 }
 
 .telegram, .vk, .odnoklassniki {
     width: 24px;
     height: 24px;
     margin: 5px;
-    border-radius: 24px;
+    border-radius: 50%;
 }
 
 .download_cv {
-    margin: 49px;
-    width: 168px;
-    height: 46px;
+    padding: 10px 29px;
     border-radius: 40px;
     background: #444444;
     color: #FFFFFF;
-    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
     border: 3px solid #FFFFFF;
     align-self: center;
 }
 
 .copyrights {
-    margin-top: 17px;
+    margin-top: 66px;
+    margin-bottom: 10px;
     align-self: center;
+    font-size: 14px;
 }
 
 .cv-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .main-content {
@@ -118,11 +110,25 @@ h4 {
 }
 
 .cv-name {
+    margin-bottom: 10px;
+    font-size: 62px;
+    font-weight: bold;
     text-align: center;
-    margin: 0;
+    line-height: 71px;
+}
+
+.bar-name {
+    font-size: 38px;
+    font-weight: bold;
 }
 
 .cv-profession {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 23px;
     text-align: center;
-    margin: 0;
+}
+
+.bar-profession {
+    font-size: 20px;
 }
