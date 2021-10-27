@@ -68,16 +68,21 @@ body {
         }
 
         .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-self: center;
             }
 
             .main-content .profile-name {
+                margin-top: -7px;
+                align-self: center;
                 line-height: 71px;
-                margin-bottom: 10px;
                 font-size: 62px;
             }
 
             .main-content .profession-name {
+                padding-top: 7px;
                 font-size: 22px;
                 line-height: 23px;
             }

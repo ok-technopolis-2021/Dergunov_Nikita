@@ -4,26 +4,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+    }
 
-.profile-card .avatar {
-    align-self: center;
-    position: relative;
-    height: 180px;
-    width: 180px;
-    box-shadow: 12px 12px #5d5d5d;
-}
+    .profile-card .avatar {
+        align-self: center;
+        position: relative;
+        height: 180px;
+        width: 180px;
+        box-shadow: 12px 12px #5d5d5d;
+    }
 
-.profile-card .profile-name {
-    margin-top: 25px;
-    font-size: 38px;
-}
+    .profile-card .profile-name {
+        margin-top: 29px;
+        font-size: 38px;
+    }
 
-.profile-card .profession-name {
-    margin: 8px;
-    font-size: 20px;
-}
+    .profile-card .profession-name {
+        margin: 8px;
+        font-size: 20px;
+    }
 
-.profile-card .social-networks-bar {
-    margin: 3px 3px 52px;
-}
+    .profile-card .social-networks-bar {
+        margin: 3px 3px 52px;
+    }

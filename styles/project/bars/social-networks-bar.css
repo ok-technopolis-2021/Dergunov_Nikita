@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
 }
+
 .telegram .icon-social-network {
     background: url("../../../res/tg.png");
     background-size: cover;
