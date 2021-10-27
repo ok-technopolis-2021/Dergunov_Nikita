@@ -1,0 +1,83 @@
+@import url("base/avatar/avatar.css");
+@import url("base/texts/names.css");
+@import url("base/icons/icon-social-network.css");
+@import url("base/buttons/button.css");
+
+@import url("project/profile-cards/profile-card.css");
+
+@import url("cosmitical.css");
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, serif;
+    font-size: 17px;
+    color: #FFFFFF;
+    }
+
+    .CV {
+        display: flex;
+        background: #444444;
+        width: 1127px;
+        height: 595px;
+        border-radius: 30px;
+        filter: var(--invert);
+        }
+
+        .cv-bar {
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cv-bar .profile-card {
+            margin-top: 70px;
+        }
+
+        .copyrights {
+            margin-top: 66px;
+            margin-bottom: 10px;
+            align-self: center;
+            font-size: 14px;
+        }
+
+
+    .cv-card {
+        width: 747px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #222222;
+        border-radius: 30px;
+        }
+
+        .cv-card .button-change-theme {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .main-content {
+            align-self: center;
+            }
+
+            .main-content .profile-name {
+                line-height: 71px;
+                margin-bottom: 10px;
+                font-size: 62px;
+            }
+
+            .main-content .profession-name {
+                font-size: 22px;
+                line-height: 23px;
+            }

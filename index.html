@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit card</title> <!-- Заполнено будет позже) -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script>
+        function changeTheme() {
+            let cv = document.querySelector("#CV").classList
+            cv.toggle("dark-theme")
+            cv.toggle("light-theme")
+        }
+    </script>
 </head>
 <body>
-<div class="CV">
+<div id="CV" class="CV dark-theme">
     <article class="cv-bar">
-        <div class="wrapper-profile">
-            <div class="wrapper-avatar">
-                <img class="avatar" src="./images/ava.jpg" alt="ava">
-            </div>
-            <div class="bar-name">Dergunov Nikita</div>
-            <div class="bar-profession">Developer</div>
-            <div class="social-networks">
-                <img class="telegram" src="./images/tg.png" alt="tg">
-                <img class="vk" src="./images/vk.png" alt="vk">
-                <img class="odnoklassniki" src="./images/odnoklassniki.png" alt="ok">
-            </div>
-            <button class="download_cv">Download CV</button>
-        </div>
+        <section class="profile-card">
+            <div class="avatar" role="img"></div>
+            <div class="profile-name">Dergunov Nikita</div>
+            <div class="profession-name">Developer</div>
+            <section class="social-networks-bar">
+                <div class="telegram"><div class="icon-social-network" role="img"></div></div>
+                <div class="vk"><div class="icon-social-network" role="img"></div></div>
+                <div class="odnoklassniki"><div class="icon-social-network" role="img"></div></div>
+            </section>
+            <button class="button-download-cv" type="submit" onclick="window.open('res/cv.pdf')">Download CV</button>
+        </section>
         <footer class="copyrights">&copy2021 All rights reserved.</footer>
     </article>
     <main class="cv-card">
@@ -29,10 +34,12 @@
             <!-- Пока что не известно что в нафигации будет -->
             <nav class="navigation"></nav>
         </header>
+        <button class="button-change-theme" onclick="changeTheme()"></button>
         <div class="main-content">
-            <div class="cv-name">Dergunov Nikita</div>
-            <div class="cv-profession">Developer</div>
+            <div class="profile-name">Dergunov Nikita</div>
+            <div class="profession-name">Developer</div>
         </div>
+
     </main>
 </div>
 </body>

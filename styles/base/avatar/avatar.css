@@ -1,0 +1,6 @@
+
+.avatar {
+    background: url("../../../res/ava.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
