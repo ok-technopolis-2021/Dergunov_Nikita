@@ -1,11 +1,11 @@
-@import url("base/avatar/avatar.css");
-@import url("base/texts/names.css");
-@import url("base/icons/icon-social-network.css");
-@import url("base/buttons/button.css");
+@import url("avatar.scss");
+@import url("names.scss");
+@import url("icon-social-network.scss");
+@import url("button.scss");
 
-@import url("project/profile-cards/profile-card.css");
+@import url("profile-card.scss");
 
-@import url("cosmitical.css");
+@import url("cosmitical.scss");
 
 html {
     height: 100%;

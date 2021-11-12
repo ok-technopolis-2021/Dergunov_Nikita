@@ -4,14 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit card</title> <!-- Заполнено будет позже) -->
-    <link rel="stylesheet" href="./styles/main.css">
-    <script>
-        function changeTheme() {
-            let cv = document.querySelector("#CV").classList
-            cv.toggle("dark-theme")
-            cv.toggle("light-theme")
-        }
-    </script>
+    <!-- inject:css -->
+    <!-- endinject -->
 </head>
 <body>
 <div id="CV" class="CV dark-theme">
@@ -25,7 +19,7 @@
                 <div class="vk"><div class="icon-social-network" role="img"></div></div>
                 <div class="odnoklassniki"><div class="icon-social-network" role="img"></div></div>
             </section>
-            <button class="button-download-cv" type="submit" onclick="window.open('res/cv.pdf')">Download CV</button>
+            <button class="button-download-cv" type="submit" onclick="window.open('assets/cv.pdf')">Download CV</button>
         </section>
         <footer class="copyrights">&copy2021 All rights reserved.</footer>
     </article>
@@ -42,5 +36,7 @@
 
     </main>
 </div>
+<!-- inject:js -->
+<!-- endinject -->
 </body>
 </html>

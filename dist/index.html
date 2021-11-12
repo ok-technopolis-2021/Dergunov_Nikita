@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit card</title> <!-- Заполнено будет позже) -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- endinject -->
+</head>
+<body>
+<div id="CV" class="CV dark-theme">
+    <article class="cv-bar">
+        <section class="profile-card">
+            <div class="avatar" role="img"></div>
+            <div class="profile-name">Alex Smith</div>
+            <div class="profession-name">Web Designer</div>
+            <section class="social-networks-bar">
+                <div class="telegram"><div class="icon-social-network" role="img"></div></div>
+                <div class="vk"><div class="icon-social-network" role="img"></div></div>
+                <div class="odnoklassniki"><div class="icon-social-network" role="img"></div></div>
+            </section>
+            <button class="button-download-cv" type="submit" onclick="window.open('assets/cv.pdf')">Download CV</button>
+        </section>
+        <footer class="copyrights">&copy2021 All rights reserved.</footer>
+    </article>
+    <main class="cv-card">
+        <header class="header-main">
+            <!-- Пока что не известно что в нафигации будет -->
+            <nav class="navigation"></nav>
+        </header>
+        <button class="button-change-theme" onclick="changeTheme()"></button>
+        <div class="main-content">
+            <div class="profile-name">Alex Smith</div>
+            <div class="profession-name">Web Designer</div>
+        </div>
+
+    </main>
+</div>
+<!-- inject:js -->
+<script src="./app.js"></script>
+<!-- endinject -->
+</body>
+</html>

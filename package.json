@@ -1,0 +1,27 @@
+{
+  "name": "dergunov_nikita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-2021/Dergunov_Nikita.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-2021/Dergunov_Nikita/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-2021/Dergunov_Nikita#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^6.2.1",
+    "gulp-inject": "^5.0.5",
+    "gulp-less": "^5.0.0",
+    "rollup": "^2.59.0"
+  }
+}
