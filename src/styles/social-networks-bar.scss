@@ -1,0 +1,23 @@
+.social-networks-bar {
+    display: flex;
+    align-items: center;
+}
+
+.social-networks-bar_item{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    border-radius: 50%;
+    }
+
+    .social-networks-bar_item__telegram {
+        background: url("../assets/tg.png");
+    }
+
+    .social-networks-bar_item__vk {
+        background: url("../assets/vk.png");
+    }
+
+    .social-networks-bar_item__ok {
+        background: url("../assets/odnoklassniki.png");
+    }

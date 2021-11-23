@@ -1,11 +1,12 @@
-@import url("base/avatar/avatar.css");
-@import url("base/texts/names.css");
-@import url("base/icons/icon-social-network.css");
-@import url("base/buttons/button.css");
+@import url(reset.scss);
+@import url("avatar.scss");
+@import url("names.scss");
+@import url("button.scss");
 
-@import url("project/profile-cards/profile-card.css");
+@import url("profile-card.scss");
 
-@import url("cosmitical.css");
+@import url("cosmitical.scss");
+@import url("__bg-size-cover.scss");
 
 html {
     height: 100%;
@@ -20,16 +21,15 @@ body {
     margin: 0;
     font-family: Helvetica, serif;
     font-size: 17px;
-    color: #FFFFFF;
+    color: var(--color-text);
     }
 
     .CV {
         display: flex;
-        background: #444444;
+        background: var(--color-body-background);
         width: 1127px;
         height: 595px;
         border-radius: 30px;
-        filter: var(--invert);
         }
 
         .cv-bar {
@@ -52,12 +52,13 @@ body {
 
 
     .cv-card {
+        position: relative;
         width: 747px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #222222;
+        background: var(--color-body-main);
         border-radius: 30px;
         }
 

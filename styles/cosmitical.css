@@ -1,8 +1,0 @@
-
-:root .dark-theme {
-    --invert: invert(0);
-}
-
-:root .light-theme {
-    --invert: invert(1);
-}

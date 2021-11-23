@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit card</title> <!-- Заполнено будет позже) -->
-    <link rel="stylesheet" href="./styles/main.css">
-    <script>
-        function changeTheme() {
-            let cv = document.querySelector("#CV").classList
-            cv.toggle("dark-theme")
-            cv.toggle("light-theme")
-        }
-    </script>
+    <!-- inject:css -->
+    <!-- endinject -->
 </head>
-<body>
-<div id="CV" class="CV dark-theme">
+<body class="dark-theme">
+<div id="CV" class="CV">
     <article class="cv-bar">
         <section class="profile-card">
             <div class="avatar" role="img"></div>
             <div class="profile-name">Alex Smith</div>
             <div class="profession-name">Web Designer</div>
             <section class="social-networks-bar">
-                <div class="telegram"><div class="icon-social-network" role="img"></div></div>
-                <div class="vk"><div class="icon-social-network" role="img"></div></div>
-                <div class="odnoklassniki"><div class="icon-social-network" role="img"></div></div>
+                <div class="social-networks-bar_item social-networks-bar_item__telegram __bg-size-cover" role="img"></div>
+                <div class="social-networks-bar_item social-networks-bar_item__vk __bg-size-cover" role="img"></div>
+                <div class="social-networks-bar_item social-networks-bar_item__ok __bg-size-cover" role="img"> </div>
             </section>
-            <button class="button-download-cv" type="submit" onclick="window.open('res/cv.pdf')">Download CV</button>
+            <button class="button-download-cv" type="submit" onclick="window.open('assets/cv.pdf')">Download CV</button>
         </section>
         <footer class="copyrights">&copy2021 All rights reserved.</footer>
     </article>
@@ -42,5 +36,7 @@
 
     </main>
 </div>
+<!-- inject:js -->
+<!-- endinject -->
 </body>
 </html>
