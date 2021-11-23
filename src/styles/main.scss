@@ -1,3 +1,4 @@
+@import url(reset.scss);
 @import url("avatar.scss");
 @import url("names.scss");
 @import url("button.scss");
@@ -20,16 +21,15 @@ body {
     margin: 0;
     font-family: Helvetica, serif;
     font-size: 17px;
-    color: #FFFFFF;
+    color: var(--color-text);
     }
 
     .CV {
         display: flex;
-        background: #444444;
+        background: var(--color-body-background);
         width: 1127px;
         height: 595px;
         border-radius: 30px;
-        filter: var(--invert);
         }
 
         .cv-bar {
@@ -52,12 +52,13 @@ body {
 
 
     .cv-card {
+        position: relative;
         width: 747px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #222222;
+        background: var(--color-body-main);
         border-radius: 30px;
         }
 

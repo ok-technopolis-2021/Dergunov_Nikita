@@ -1,8 +1,14 @@
 
 :root .dark-theme {
-    --invert: invert(0);
+    --color-text: #FFFFFF;
+    --color-body-background: #444444;
+    --color-body-main: #222222;
+    --color-shadow: #5d5d5d;
 }
 
 :root .light-theme {
-    --invert: invert(1);
+    --color-text: #000000;
+    --color-body-background: #BBBBBB;
+    --color-body-main: #DDDDDD;
+    --color-shadow: #a2a2a2;
 }

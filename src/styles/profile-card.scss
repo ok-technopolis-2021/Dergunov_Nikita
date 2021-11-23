@@ -11,7 +11,7 @@
         position: relative;
         height: 180px;
         width: 180px;
-        box-shadow: 12px 12px #5d5d5d;
+        box-shadow: 12px 12px var(--color-shadow);
     }
 
     .profile-card .profile-name {
