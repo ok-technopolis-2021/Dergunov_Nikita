@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoader", changeTheme);
 function changeTheme() {
-    let cv = document.querySelector("#CV").classList;
-    cv.toggle("dark-theme");
-    cv.toggle("light-theme");
+    let body = document.querySelector("body").classList;
+    body.toggle("dark-theme");
+    body.toggle("light-theme");
 }

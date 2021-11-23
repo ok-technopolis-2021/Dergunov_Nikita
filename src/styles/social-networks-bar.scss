@@ -3,16 +3,21 @@
     align-items: center;
 }
 
-.telegram .icon-social-network {
-    background: url("../assets/tg.png");
-    background-size: cover;
-}
+.social-networks-bar_item{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    border-radius: 50%;
+    }
 
-.vk .icon-social-network {
-    background: url("../assets/vk.png");
-    background-size: cover;
-}
-.odnoklassniki .icon-social-network {
-    background: url("../assets/odnoklassniki.png");
-    background-size: cover;
-}
+    .social-networks-bar_item__telegram {
+        background: url("../assets/tg.png");
+    }
+
+    .social-networks-bar_item__vk {
+        background: url("../assets/vk.png");
+    }
+
+    .social-networks-bar_item__ok {
+        background: url("../assets/odnoklassniki.png");
+    }

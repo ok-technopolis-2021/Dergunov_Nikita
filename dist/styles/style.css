@@ -15,14 +15,14 @@
   border: 3px solid #FFFFFF;
   align-self: center;
 }
+.button-download-cv:hover {
+  background-color: #FFFFFF;
+  color: #444444;
+}
 .button-change-theme {
   color: #FFFFFF;
   padding: 20px;
   border-radius: 50%;
-}
-.button-download-cv:hover {
-  background-color: #FFFFFF;
-  color: #444444;
 }
 
 :root .dark-theme {
@@ -30,13 +30,6 @@
 }
 :root .light-theme {
   --invert: invert(1);
-}
-
-.icon-social-network {
-  width: 24px;
-  height: 24px;
-  margin: 5px;
-  border-radius: 50%;
 }
 
 .avatar {
@@ -53,12 +46,6 @@
   text-align: center;
   font-weight: bold;
 }
-.icon-social-network {
-  width: 24px;
-  height: 24px;
-  margin: 5px;
-  border-radius: 50%;
-}
 .button-download-cv {
   padding: 10px 29px;
   border-radius: 40px;
@@ -70,30 +57,33 @@
   border: 3px solid #FFFFFF;
   align-self: center;
 }
+.button-download-cv:hover {
+  background-color: #FFFFFF;
+  color: #444444;
+}
 .button-change-theme {
   color: #FFFFFF;
   padding: 20px;
   border-radius: 50%;
 }
-.button-download-cv:hover {
-  background-color: #FFFFFF;
-  color: #444444;
-}
 .social-networks-bar {
   display: flex;
   align-items: center;
 }
-.telegram .icon-social-network {
+.social-networks-bar_item {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.social-networks-bar_item__telegram {
   background: url("../assets/tg.png");
-  background-size: cover;
 }
-.vk .icon-social-network {
+.social-networks-bar_item__vk {
   background: url("../assets/vk.png");
-  background-size: cover;
 }
-.odnoklassniki .icon-social-network {
+.social-networks-bar_item__ok {
   background: url("../assets/odnoklassniki.png");
-  background-size: cover;
 }
 .profile-card {
   display: flex;
@@ -123,6 +113,9 @@
 }
 :root .light-theme {
   --invert: invert(1);
+}
+.__bg-size-cover {
+  background-size: cover;
 }
 html {
   height: 100%;
@@ -207,17 +200,20 @@ body {
   display: flex;
   align-items: center;
 }
-.telegram .icon-social-network {
+.social-networks-bar_item {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.social-networks-bar_item__telegram {
   background: url("../assets/tg.png");
-  background-size: cover;
 }
-.vk .icon-social-network {
+.social-networks-bar_item__vk {
   background: url("../assets/vk.png");
-  background-size: cover;
 }
-.odnoklassniki .icon-social-network {
+.social-networks-bar_item__ok {
   background: url("../assets/odnoklassniki.png");
-  background-size: cover;
 }
 .profile-card {
   display: flex;
@@ -553,15 +549,22 @@ template {
   display: flex;
   align-items: center;
 }
-.telegram .icon-social-network {
+.social-networks-bar_item {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.social-networks-bar_item__telegram {
   background: url("../assets/tg.png");
-  background-size: cover;
 }
-.vk .icon-social-network {
+.social-networks-bar_item__vk {
   background: url("../assets/vk.png");
-  background-size: cover;
 }
-.odnoklassniki .icon-social-network {
+.social-networks-bar_item__ok {
   background: url("../assets/odnoklassniki.png");
+}
+
+.__bg-size-cover {
   background-size: cover;
 }
