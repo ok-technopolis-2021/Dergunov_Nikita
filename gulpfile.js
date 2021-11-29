@@ -6,7 +6,7 @@ const rollup = require('rollup');
 const image = require('gulp-image');
 
 const assetsPath = 'src/assets/*.png';
-const stylesPath = './src/styles/**/*.scss';
+const stylesPath = './src/styles/**/main.scss';
 const jsPath = 'src/**/*.js';
 const htmlPath = './src/index.html';
 const distPath = './dist/';
