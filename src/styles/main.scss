@@ -4,9 +4,13 @@
 @import url("button.scss");
 
 @import url("profile-card.scss");
+@import url("skills.scss");
 
 @import url("cosmitical.scss");
 @import url("__bg-size-cover.scss");
+@import url("__flex-end.scss");
+@import url("__plus-image.scss");
+@import url("__minus-image.scss");
 
 html {
     height: 100%;
@@ -64,8 +68,8 @@ body {
 
         .cv-card .button-change-theme {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 20px;
+            right: 20px;
         }
 
         .main-content {
@@ -84,6 +88,25 @@ body {
 
             .main-content .profession-name {
                 padding-top: 7px;
+                padding-bottom: 14px;
                 font-size: 22px;
                 line-height: 23px;
             }
+
+            .main-content .skills-header {
+                font-size: 42px;
+            }
+
+            .main-content .buttons-container {
+                width: 90%;
+                display: flex;
+                flex-direction: initial;
+                justify-content: space-between;
+                align-self: center;
+            }
+
+                .buttons-container .button-change-theme {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                }
