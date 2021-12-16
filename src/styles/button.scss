@@ -1,7 +1,7 @@
-.button-download-cv {
+.button {
     padding: 10px 29px;
     border-radius: 40px;
-    background: var(--color-body-background);
+    background-color: var(--color-body-background);
     color: var(--color-text);
     font-family: Helvetica, serif;
     font-size: 17px;
@@ -10,15 +10,25 @@
     align-self: center;
 }
 
-.button-change-theme {
+.button:hover {
+    background-color: var(--color-text);
     color: var(--color-body-background);
-    background: var(--color-text);
+}
+
+.button-download-cv {
+}
+
+.button-change-theme {
     padding: 20px;
     border-radius: 50%;
 }
 
+.button-change-page {
+    background-color: var(--color-body-main);
+    color: var(--color-text);
+}
 
-.button-download-cv:hover {
+.button-change-page:hover {
     background-color: var(--color-text);
-    color: var(--color-body-background);
+    color: var(--color-body-main);
 }

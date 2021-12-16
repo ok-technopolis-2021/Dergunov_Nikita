@@ -8,7 +8,7 @@ const image = require('gulp-image');
 const assetsPath = 'src/assets/*.png';
 const stylesPath = './src/styles/**/main.scss';
 const jsPath = 'src/**/*.js';
-const htmlPath = './src/index.html';
+const htmlPath = './src/*.html';
 const distPath = './dist/';
 const rollupConfig = {
     input: 'src/app.js',

@@ -317,10 +317,15 @@ template {
   text-align: center;
   font-weight: bold;
 }
-.button-download-cv {
+.skills-header {
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+}
+.button {
   padding: 10px 29px;
   border-radius: 40px;
-  background: var(--color-body-background);
+  background-color: var(--color-body-background);
   color: var(--color-text);
   font-family: Helvetica, serif;
   font-size: 17px;
@@ -328,15 +333,21 @@ template {
   border: 3px solid var(--color-text);
   align-self: center;
 }
-.button-change-theme {
+.button:hover {
+  background-color: var(--color-text);
   color: var(--color-body-background);
-  background: var(--color-text);
+}
+.button-change-theme {
   padding: 20px;
   border-radius: 50%;
 }
-.button-download-cv:hover {
+.button-change-page {
+  background-color: var(--color-body-main);
+  color: var(--color-text);
+}
+.button-change-page:hover {
   background-color: var(--color-text);
-  color: var(--color-body-background);
+  color: var(--color-body-main);
 }
 .social-networks-bar {
   display: flex;
@@ -380,20 +391,139 @@ template {
 .profile-card .social-networks-bar {
   margin: 3px 3px 52px;
 }
+.skills {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.skills-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-add_dialog {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  background-color: var(--color-body-background);
+  border-radius: 1em;
+  right: 50px;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.skills__input {
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0 10px;
+  background: transparent;
+  border: 3px solid var(--color-body-main);
+  color: var(--color-text);
+}
+.skills-item {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.skills-item-inner {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.skill-item-title {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar {
+  margin-top: 10px;
+  padding: 3px;
+  height: 15px;
+  position: relative;
+  border: 1px solid var(--color-skill-progress);
+  border-radius: 25px;
+}
+.progress-bar-strip {
+  border-radius: 20px 20px 20px 20px;
+  display: block;
+  height: 100%;
+  background-color: var(--color-skill-progress);
+  position: relative;
+}
+.__color-skill-progress {
+  color: var(--color-skill-progress);
+}
+.__hidden {
+  display: none;
+}
 :root .dark-theme {
   --color-text: #FFFFFF;
   --color-body-background: #444444;
   --color-body-main: #222222;
   --color-shadow: #5d5d5d;
+  --color-skill-progress: #52B2DA;
 }
 :root .light-theme {
   --color-text: #000000;
   --color-body-background: #BBBBBB;
   --color-body-main: #DDDDDD;
-  --color-shadow: #a2a2a2;
+  --color-shadow: #A2A2A2;
+  --color-skill-progress: #AD4D25;
 }
 .__bg-size-cover {
   background-size: cover;
+}
+.__flex-end {
+  align-self: flex-end;
+}
+.__plus-image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: var(--color-text);
+  border-radius: 50%;
+}
+.__plus-image:before,
+.__plus-image:after {
+  content: "";
+  position: absolute;
+  background: var(--color-body-main);
+}
+.__plus-image:before {
+  left: 50%;
+  top: 4px;
+  bottom: 4px;
+  width: 5px;
+  transform: translateX(-50%);
+}
+.__plus-image:after {
+  top: 50%;
+  left: 4px;
+  right: 4px;
+  height: 5px;
+  transform: translateY(-50%);
+}
+.__minus-image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: var(--color-text);
+  border-radius: 50%;
+}
+.__minus-image:after {
+  content: "";
+  position: absolute;
+  background: var(--color-body-main);
+  top: 50%;
+  left: 4px;
+  right: 4px;
+  height: 5px;
+  transform: translateY(-50%);
 }
 html {
   height: 100%;
@@ -443,8 +573,8 @@ body {
 }
 .cv-card .button-change-theme {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
 }
 .main-content {
   display: flex;
@@ -460,6 +590,22 @@ body {
 }
 .main-content .profession-name {
   padding-top: 7px;
+  padding-bottom: 14px;
   font-size: 22px;
   line-height: 23px;
+}
+.main-content .skills-header {
+  font-size: 42px;
+}
+.main-content .buttons-container {
+  width: 90%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-self: center;
+}
+.buttons-container .button-change-theme {
+  position: relative;
+  top: 0;
+  right: 0;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit card</title> <!-- Заполнено будет позже) -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- endinject -->
+</head>
+<body class="dark-theme">
+<div id="CV" class="CV">
+    <article class="cv-bar">
+        <section class="profile-card">
+            <div class="avatar" role="img"></div>
+            <div class="profile-name">Alex Smith</div>
+            <div class="profession-name">Web Designer</div>
+            <section class="social-networks-bar">
+                <div class="social-networks-bar_item social-networks-bar_item__telegram __bg-size-cover"
+                     role="img"></div>
+                <div class="social-networks-bar_item social-networks-bar_item__vk __bg-size-cover" role="img"></div>
+                <div class="social-networks-bar_item social-networks-bar_item__ok __bg-size-cover" role="img"></div>
+            </section>
+            <button class="button button-download-cv" type="submit" onclick="window.open('assets/cv.pdf')">Download CV
+            </button>
+        </section>
+        <footer class="copyrights">&copy2021 All rights reserved.</footer>
+    </article>
+    <main class="cv-card">
+        <header class="header-main">
+            <!-- Пока что не известно что в нафигации будет -->
+            <nav class="navigation"></nav>
+        </header>
+
+        <div class="main-content skills">
+            <div class="skills">
+                <section class="skills-title">
+                    <div class="skills-header">Coding <span class="__color-skill-progress">Skills</span></div>
+                    <div class="skills-button __plus-image" id="add-new-skill"></div>
+                </section>
+                <section class="skill-add">
+                    <form class="skill-add_dialog __hidden">
+                        <input type="submit" class="__hidden">
+                        <input class="skills__input" type="text" placeholder="skill name">
+                        <input class="skills__input" type="text" placeholder="skill ratio">
+                    </form>
+                </section>
+                <section class="skills-list">
+                </section>
+            </div>
+            <div class="buttons-container">
+                <button class="button button-change-theme" onclick="changeTheme()"></button>
+                <button class="button button-change-page __flex-end" onclick="changePage()">Home</button>
+            </div>
+    </main>
+</div>
+<!-- inject:js -->
+<script src="./app.js"></script>
+<!-- endinject -->
+</body>
+</html>
